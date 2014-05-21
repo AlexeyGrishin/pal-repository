@@ -3,13 +3,15 @@
         "path": {
             "prefix": "pal/",
             "file": "M",
-            "object": "M"
+            "object": "M",
+            "ext": "java"
         }
     },
     "javascript5": {
         "path": {
             "file": "m",
-            "object": "M"
+            "object": "M",
+            "ext": "js"
         },
     }
 }
