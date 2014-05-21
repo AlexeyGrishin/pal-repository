@@ -1,0 +1,15 @@
+{
+    "java8": {
+        "path": {
+            "prefix": "pal/",
+            "file": "M",
+            "object": "M"
+        }
+    },
+    "javascript5": {
+        "path": {
+            "file": "m",
+            "object": "M"
+        },
+    }
+}
