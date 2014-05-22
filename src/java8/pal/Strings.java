@@ -32,5 +32,9 @@ public class Strings {
   }
 
     
-    //::addbefore
-}
+  //::function truncateLeading
+  //@@depends isDefined
+  public static String truncateLeading(String str, int maxLength, String leading) {
+     return str;
+  }
+    
