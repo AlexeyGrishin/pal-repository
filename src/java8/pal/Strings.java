@@ -29,9 +29,11 @@ public class Strings {
         return str.replaceAll("\\s+", " ");
     }
 
-  //::function truncateLeading
-  //@@depends isDefined
-  public static String truncateLeading(String str, int maxLength, String leading) {
-     return str;
-  }
-    
+    //::function truncateLeading
+    //@@depends isDefined
+    public static String truncateLeading(String str, int maxLength, String leading) {
+        return str;
+    }
+
+    //::addbefore
+}
