@@ -36,6 +36,7 @@ public class Strings {
     }
 
   //::function truncateLeading2
+  //Add some comments
   //@@depends isDefined
   public static String truncateLeading2(String str, int maxLength, String leading) {
      return str;
