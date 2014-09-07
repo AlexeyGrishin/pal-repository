@@ -5,5 +5,4 @@
 ,{"id":"isPositive","tag":"checks","description":""}
 ,{"id":"valid","tag":"checks","description":""}
 ,{"id":"invalid","tag":"checks","description":""}
-,{"id":"truncateLeading2","tag":"strings","description":"another description"}
 ]}

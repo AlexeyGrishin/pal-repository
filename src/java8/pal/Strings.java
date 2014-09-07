@@ -22,7 +22,7 @@ public class Strings {
         //@unit ("abcd", 3) => "a..."
     }
 
-    //::function truncate
+    //::function normalizeSpaces
     //@@depends isDefined
     public static String normalizeSpaces(String str) {
         isDefined(str, "str");
@@ -35,6 +35,5 @@ public class Strings {
         return str;
     }
 
-    
     //::addbefore
 }
