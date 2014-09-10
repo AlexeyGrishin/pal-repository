@@ -35,5 +35,10 @@ public class Strings {
         return str;
     }
 
+     //::function temp
+     //@@depends truncate
+     public static String temp(String str) {
+         return truncate(str, 10, "???");
+     }
     //::addbefore
 }
