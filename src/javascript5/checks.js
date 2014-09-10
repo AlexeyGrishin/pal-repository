@@ -40,7 +40,9 @@
         //@@depends valid, invalid
         isPositive: function(val) {
             return nr < 0 ? invalid("negative: " + nr) : valid();
-        }
+        },
+
         //::addbefore
+        stub: null
     }
 })(window)

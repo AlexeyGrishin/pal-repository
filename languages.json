@@ -14,13 +14,13 @@
             },
             "templates": {
                 "class": "
-                    | package ${java.package};
-                    | //::imports
+                    |package ${java.package};
+                    |//::imports
                     |
-                    | //::module ${tag}
-                    | public class ${class} {
-                    |  //::addbefore
-                    | }
+                    |//::module ${tag}
+                    |public class ${class} {
+                    |    //::addbefore
+                    |}
                 ",
                 "import": "import static ${java.package}.${class}.*;"
             }
@@ -36,16 +36,16 @@
             },
             "templates": {
                 "class": "
-                    | (function(window) {
-                    |  //::imports
-                    |  //::module ${tag}
-                    |  window.${class} = {
-                    |   //::addbefore
-                    |   stub: null
-                    |  }
-                    | })(window);
+                    |(function(exports, imports) {
+                    |    //::imports
+                    |    //::module ${tag}
+                    |    exports.${class} = {
+                    |    //::addbefore
+                    |        stub: null
+                    |    }
+                    |})(window, window);
                     ",
-                "import": "var ${tag} = window.${class};"
+                "import": "var ${tag} = imports.${class};"
             }
         }
     }

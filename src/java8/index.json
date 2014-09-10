@@ -1,0 +1,8 @@
+{"functions":[
+{"id":"truncate","tag":"strings","description":"Truncates"}
+,{"id":"normalizeSpaces","tag":"strings","description":"Suddenly normalizes spaces"}
+,{"id":"isDefined","tag":"checks","description":""}
+,{"id":"isPositive","tag":"checks","description":""}
+,{"id":"valid","tag":"checks","description":""}
+,{"id":"invalid","tag":"checks","description":""}
+]}
