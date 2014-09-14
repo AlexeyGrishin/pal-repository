@@ -36,5 +36,11 @@ public class Checks {
         return true;
     }
 
+     //::function isNegative
+     //@@depends valid, invalid
+     public static boolean isNegative(Integer nr) {
+         return nr > 0 ? invalid("positive: " + nr) : valid();
+     }
+
     //::addbefore
 }

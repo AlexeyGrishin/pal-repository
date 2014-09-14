@@ -1,19 +1,17 @@
 package pal;
 //::imports
 import static pal.Checks.*;
-
 //::module strings
 public class Strings {
-
     public static String truncate(String str, int maxLength) {
         return truncate(str, maxLength, "...");
     }
-
     //::function truncate
     //@@depends isDefined, isPositive
+
     /**
      * Truncates :)
-     **/
+     */
     public static String truncate(String str, int maxLength, String trailing) {
         isDefined(str, "str");
         isDefined(trailing, "trailing");
@@ -24,16 +22,23 @@ public class Strings {
         //@unit ("abcd", 3) => "a..."
     }
 
-
-    //::function truncate
+    //::function normalizeSpaces
     //@@depends isDefined
     public static String normalizeSpaces(String str) {
         isDefined(str, "str");
         return str.replaceAll("\\s+", " ");
     }
 
+    //::function truncateLeading
+    //@@depends isDefined
+    public static String truncateLeading(String str, int maxLength, String leading) {
+        return str;
+    }
 
-
+     //::function temp
+     //@@depends truncate
+     public static String temp(String str) {
+         return truncate(str, 10, "???");
+     }
     //::addbefore
-
 }

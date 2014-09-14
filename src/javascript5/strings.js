@@ -17,6 +17,8 @@
             Checks.isPositive(maxLength);
             Checks.isPositive(maxLength - trailing.length);
             return str.length > maxLength ? (str.substring(0, maxLength - trailing.length) + trailing) : str;
-        }
+        },
+
         //::addbefore
+        stub: null
 }})(window, Checks)

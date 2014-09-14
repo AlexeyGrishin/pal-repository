@@ -2,17 +2,50 @@
     "languages": {
         "java8": {
             "path": {
-                "prefix": "pal/",
-                "file": "M",
-                "object": "M",
-                "ext": "java"
+                "prefix": "pal/"
+            },
+            "code": {
+                "extension": "java",
+                "methodNaming": "camel",
+                "classNaming": "Camel",
+                "fileNaming": "Camel",
+                "comment": "//",
+                "indent": 4
+            },
+            "templates": {
+                "class": "
+                    |package ${java.package};
+                    |//::imports
+                    |
+                    |//::module ${tag}
+                    |public class ${class} {
+                    |    //::addbefore
+                    |}
+                ",
+                "import": "import static ${java.package}.${class}.*;"
             }
         },
         "javascript5": {
-            "path": {
-                "file": "m",
-                "object": "M",
-                "ext": "js"
+            "code": {
+                "extension": "js",
+                "methodNaming": "camel",
+                "classNaming": "Camel",
+                "fileNaming": "camel",
+                "comment": "//",
+                "indent": 2
+            },
+            "templates": {
+                "class": "
+                    |(function(exports, imports) {
+                    |    //::imports
+                    |    //::module ${tag}
+                    |    exports.${class} = {
+                    |    //::addbefore
+                    |        stub: null
+                    |    }
+                    |})(window, window);
+                    ",
+                "import": "var ${tag} = imports.${class};"
             }
         }
     }
