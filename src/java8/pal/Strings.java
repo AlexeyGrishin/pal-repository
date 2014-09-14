@@ -40,5 +40,10 @@ public class Strings {
      public static String temp(String str) {
          return truncate(str, 10, "???");
      }
+//::function capitalize
+///capitalize!!!
+    public static String capitalize(String str) {
+        return str.substring(0, 1).toUpperCase() + str.substring(1);
+    }
     //::addbefore
 }
