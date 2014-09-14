@@ -22,7 +22,8 @@
                     |    //::addbefore
                     |}
                 ",
-                "import": "import static ${java.package}.${class}.*;"
+                "import": "import static ${java.package}.${class}.*;",
+                "call": "${class}.${method}(_)"
             }
         },
         "javascript5": {
@@ -45,7 +46,8 @@
                     |    }
                     |})(window, window);
                     ",
-                "import": "var ${tag} = imports.${class};"
+                "import": "var ${tag} = imports.${class};",
+                "call": "window.${class}.${method}(_)"
             }
         }
     }
