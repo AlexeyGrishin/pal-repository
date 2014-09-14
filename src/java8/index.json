@@ -6,5 +6,5 @@
 ,{"id":"valid","tag":"checks","description":""}
 ,{"id":"invalid","tag":"checks","description":""}
 ,{"id":"isNegative","tag":"checks","description":"Checks that value is negative"}
-,{"id":"capitalize","tag":"strings"}
+,{"id":"capitalize","tag":"strings","description":""}
 ]}
