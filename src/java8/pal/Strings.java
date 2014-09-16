@@ -40,9 +40,12 @@ public class Strings {
      public static String temp(String str) {
          return truncate(str, 10, "???");
      }
-//::function capitalize
-///capitalize!!!
+/**::function capitalize
+     * capitalize!!!
+     * @@depends isDefined
+    **/ 
     public static String capitalize(String str) {
+        isDefined(str, "str");
         return str.substring(0, 1).toUpperCase() + str.substring(1);
     }
     //::addbefore
