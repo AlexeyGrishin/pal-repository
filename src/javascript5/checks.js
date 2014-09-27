@@ -42,6 +42,11 @@
             return nr < 0 ? invalid("negative: " + nr) : valid();
         },
 
+        //::function getDefault
+        getDefault: function(val, defVal) {
+            return val === undefined ? defVal : val;
+        },
+
         //::addbefore
         stub: null
     }
