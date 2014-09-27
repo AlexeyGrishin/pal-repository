@@ -1,24 +1,30 @@
 //::module strings
-(function(exports, Checks) {
+(function(exports, imports) {
+    var checks = imports.Checks;
     //@@tag strings
     exports.Strings = {
         //::function truncate
         //@@depends isDefined, isPositive
         truncate: function(str, maxLength, trailing) {
-            //@@signature function(string,number,string='...'):string
-            //@@unit ("abc", 3) => "abc"
-            //@@unit ("abcd", 3) => "a..."
-            Checks.defined(str, "str");
-            Checks.defined(maxLength, "maxLength");
-            Checks.defined(trailing, "trailing");
-            Checks.type(str, "string");
-            Checks.type(maxLength, "number");
-            Checks.type(trailing, "string");
-            Checks.isPositive(maxLength);
-            Checks.isPositive(maxLength - trailing.length);
+            //@@spec "abc" == truncate("abc", 3)
+            //@@spec "a..." == truncate("abcd", 3)
+            checks.defined(str, "str");
+            checks.defined(maxLength, "maxLength");
+            checks.defined(trailing, "trailing");
+            checks.type(str, "string");
+            checks.type(maxLength, "number");
+            checks.type(trailing, "string");
+            checks.isPositive(maxLength);
+            checks.isPositive(maxLength - trailing.length);
             return str.length > maxLength ? (str.substring(0, maxLength - trailing.length) + trailing) : str;
         },
 
+        //::function normalizeSpaces
+        //@@depends isDefined
+        normalizeSpaces: function(str) {
+            checks.isDefined(str, "str");
+            return str.replaceAll(/\s+/, "");
+        },
         //::addbefore
         stub: null
-}})(window, Checks)
+}})(window)

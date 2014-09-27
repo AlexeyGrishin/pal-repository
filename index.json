@@ -1,9 +1,66 @@
 {"functions":[
-{"id":"truncate","tag":"strings","description":"Truncates"}
-,{"id":"normalizeSpaces","tag":"strings","description":"Suddenly normalizes spaces"}
-,{"id":"isDefined","tag":"checks","description":""}
-,{"id":"isPositive","tag":"checks","description":""}
-,{"id":"valid","tag":"checks","description":""}
-,{"id":"invalid","tag":"checks","description":""}
-,{"id":"temp","tag":"strings","description":"111"}
-]}
+{
+     "id":"truncate"
+    ,"tag":"strings"
+    ,"description":"Truncates string"
+    ,"signature": {"str": "string", "maxLength": "int", "trailing": "string"}
+    ,"languages": {
+         "java": "manual"
+        ,"javascript": "manual"
+    }
+},{
+     "id":"isDefined"
+    ,"tag":"checks"
+    ,"description":""
+    ,"languages": {
+         "java": "manual"
+        ,"javascript": "manual"
+    }
+},{
+    "id":"isPositive"
+    ,"tag":"checks",
+    ,"description":""
+    ,"languages": {
+         "java": "manual"
+        ,"javascript": "manual"
+    }
+},{
+    "id":"valid"
+    ,"tag":"checks"
+    ,"description":""
+    ,"languages": {
+         "java": "manual"
+        ,"javascript": "manual"
+    }
+},{
+     "id":"invalid"
+    ,"tag":"checks"
+    ,"description":""
+    ,"languages": {
+         "java": "manual"
+        ,"javascript": "manual"
+    }
+},{
+     "id":"normalizeSpaces"
+    ,"tag":"strings"
+    ,"description":"Suddenly normalizes spaces"
+    ,"languages": {
+         "java": "manual"
+        ,"javascript": "manual"
+    }
+},{
+     "id":"isNegative"
+    ,"tag":"checks"
+    ,"description":"Checks that value is negative"
+    ,"languages": {
+         "java": "manual"
+    }
+},{
+     "id":"capitalize"
+     ,"tag":"strings"
+     ,"description":""
+    ,"languages": {
+         "java": "manual"
+    }
+}
+}

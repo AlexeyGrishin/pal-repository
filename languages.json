@@ -24,6 +24,15 @@
                 ",
                 "import": "import static ${java.package}.${class}.*;",
                 "call": "${class}.${method}(_)"
+            },
+            "types": {
+                "boolean": "boolean",
+                "int":     "int",
+                "float":   "float",
+                "string":  "String",
+                "nothing": "void",
+                "any":     "Object",
+                "?prefix": "java"
             }
         },
         "javascript5": {
@@ -48,6 +57,28 @@
                     ",
                 "import": "var ${tag} = imports.${class};",
                 "call": "window.${class}.${method}(_)"
+            }
+        },
+        "ruby2": {
+            "code": {
+                "extension": "rb",
+                "methodNaming": "underscore",
+                "classNaming": "Camel",
+                "fileNaming": "underscore",
+                "comment": "#",
+                "indent": 2
+            },
+            "templates": {
+                "class": "
+                    | #::module ${tag}
+                    | module ${class}
+                    |   extend ${class}
+                    | #::imports
+                    | #::addbefore
+                    | end",
+                "import": "| require '${classFile}'
+                           | extend ${class}",
+                "call": "${class}.${method}(_)"
             }
         }
     }

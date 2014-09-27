@@ -15,11 +15,6 @@ public class Checks {
         return o == null ? invalid("undefined: " + name) : valid();
     }
 
-    //::function getDefault
-    public static <T> T getDefault(T val, T defVal) {
-        return val == null ? defVal : val;
-    }
-
     //::function isPositive
     //@@depends valid, invalid
     public static boolean isPositive(Integer nr) {

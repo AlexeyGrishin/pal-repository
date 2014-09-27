@@ -1,5 +1,5 @@
 //::module checks
-(function(exports) {
+(function(exports, imports) {
     exports.Checks = {
         //::function invalid
         invalid: function(error) {
@@ -25,11 +25,6 @@
             }
         },
 
-        //::function getDefault
-        getDefault: function(val, defVal) {
-            return val === undefined ? defVal : val;
-        },
-
         //::function isDefined
         //@@depends valid, invalid
         isDefined: function(val, name) {
@@ -40,6 +35,12 @@
         //@@depends valid, invalid
         isPositive: function(val) {
             return nr < 0 ? invalid("negative: " + nr) : valid();
+        },
+
+        //::function isNegative
+        //@@depends valid, invalid
+        isNegative: function(val) {
+            return nr > 0 ? invalid("positive: " + nr) : valid();
         },
 
         //::addbefore

@@ -18,8 +18,8 @@ public class Strings {
         isPositive(maxLength);
         isPositive(maxLength - trailing.length());
         return str.length() > maxLength ? str.substring(0, maxLength - trailing.length()) + trailing : str;
-        //@unit ("abc", 3) => "abc"
-        //@unit ("abcd", 3) => "a..."
+        //@@spec "abc" == truncate("abc", 3)
+        //@@spec "a..." == truncate("abcd", 3)
     }
 
     //::function normalizeSpaces
@@ -29,24 +29,5 @@ public class Strings {
         return str.replaceAll("\\s+", " ");
     }
 
-    //::function truncateLeading
-    //@@depends isDefined
-    public static String truncateLeading(String str, int maxLength, String leading) {
-        return str;
-    }
-
-     //::function temp
-     //@@depends truncate
-     public static String temp(String str) {
-         return truncate(str, 10, "???");
-     }
-/**::function capitalize
-     * capitalize!!!
-     * @@depends isDefined
-    **/ 
-    public static String capitalize(String str) {
-        isDefined(str, "str");
-        return str.substring(0, 1).toUpperCase() + str.substring(1);
-    }
     //::addbefore
 }
