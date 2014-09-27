@@ -1,7 +1,39 @@
 {"functions":[
-{"id":"truncate","tag":"strings","description":"Truncates"}
-,{"id":"isDefined","tag":"checks","description":""}
-,{"id":"isPositive","tag":"checks","description":""}
-,{"id":"valid","tag":"checks","description":""}
-,{"id":"invalid","tag":"checks","description":""}
+
+        {
+             "id":"truncate"
+            ,"tag":"strings"
+            ,"description":"Truncates"
+        }
+
+        ,{
+             "id":"isDefined"
+            ,"tag":"checks"
+            ,"description":""
+        }
+
+        ,{
+             "id":"isPositive"
+            ,"tag":"checks"
+            ,"description":""
+        }
+
+        ,{
+             "id":"valid"
+            ,"tag":"checks"
+            ,"description":""
+        }
+
+        ,{
+             "id":"invalid"
+            ,"tag":"checks"
+            ,"description":""
+        }
+
+        ,{
+             "id":"getDefault"
+            ,"tag":"checks"
+            ,"description":""
+        }
+
 ]}
