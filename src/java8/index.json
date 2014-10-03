@@ -72,4 +72,10 @@
             ,"description":""
         }
 
+        ,{
+             "id":"capitalize"
+            ,"tag":"strings"
+            ,"description":"capitalize!!!"
+        }
+
 ]}
