@@ -41,17 +41,35 @@
             ,"tag":"checks"
             ,"description":"Checks that value is negative"
         }
+
         ,{
-             "id": "hypot"
-            ,"tag": "maths"
-            ,"description": "Length of the vector"
-        }
-        ,{
-            "id": "sqrt"
-            ,"tag": "maths"
-            ,"description": "Calculates sqrt"
-            ,"native": true
+             "id":"hypot"
+            ,"tag":"maths"
+            ,"description":"Length of the vector"
         }
 
+        ,{
+             "id":"sqrt"
+            ,"tag":"maths"
+            ,"description":"Calculates sqrt"
+        }
+
+        ,{
+             "id":"reverse"
+            ,"tag":"strings"
+            ,"description":"Reverses the string - really!"
+        }
+
+        ,{
+             "id":"strToInt"
+            ,"tag":"strings"
+            ,"description":""
+        }
+
+        ,{
+             "id":"intToStr"
+            ,"tag":"strings"
+            ,"description":""
+        }
 
 ]}

@@ -1,6 +1,7 @@
 package pal;
 //::imports
 import static pal.Checks.*;
+
 //::module strings
 public class Strings {
     public static String truncate(String str, int maxLength) {
@@ -27,6 +28,37 @@ public class Strings {
     public static String normalizeSpaces(String str) {
         isDefined(str, "str");
         return str.replaceAll("\\s+", " ");
+    }
+
+     ///::function reverse
+     ///@@depends isDefined
+     ///@@spec "ba" == :reverse("ab")
+     ///@@spec "a" == :reverse("a")
+     ///@@spec "" == :reverse("")
+     /**
+      * Reverses the string - really!
+      */
+     public static String reverse(String str) {
+         isDefined(str, "str");
+         char[] buffer = str.toCharArray();
+         for (int i = 0; i < buffer.length / 2 + 1; i++) {
+             char temp = buffer[i];
+             buffer[i] = buffer[buffer.length - 1 - i];
+             buffer[buffer.length - 1 - i] = temp;
+         }
+         return new String(buffer);
+     }
+
+    ///::function strToInt
+    //@@native Integer.parseInt(_)
+    public static int strToInt(String str) {
+        return Integer.parseInt(str);
+    } 
+
+    ///::function intToStr
+    //@@native ("" + _)
+    public static String intToStr(int i) {
+        return ("" + i);
     }
 
     //::addbefore

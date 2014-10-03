@@ -41,17 +41,23 @@
             ,"tag":"checks"
             ,"description":"Checks that value is negative"
         }
+
         ,{
-             "id": "hypot"
-            ,"tag": "maths"
-            ,"description": "Length of the vector"
-        }
-        ,{
-            "id": "sqrt"
-            ,"tag": "maths"
-            ,"description": "Calculates sqrt"
-            ,"native": true
+             "id":"hypot"
+            ,"tag":"maths"
+            ,"description":""
         }
 
+        ,{
+             "id":"sqrt"
+            ,"tag":"maths"
+            ,"description":"Calculates sqrt"
+        }
+
+        ,{
+             "id":"normalizeDx"
+            ,"tag":"maths"
+            ,"description":"Normalizes dx part of \u003cdx,dy\u003e vector"
+        }
 
 ]}

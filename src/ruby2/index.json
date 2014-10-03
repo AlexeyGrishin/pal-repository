@@ -9,7 +9,7 @@
         ,{
              "id":"normalizeSpaces"
             ,"tag":"strings"
-            ,"description":"Suddenly normalizes spaces"
+            ,"description":""
         }
 
         ,{
@@ -45,13 +45,61 @@
         ,{
              "id":"hypot"
             ,"tag":"maths"
-            ,"description":""
+            ,"description":"ololo"
         }
 
         ,{
              "id":"sqrt"
             ,"tag":"maths"
             ,"description":"Calculates sqrt"
+        }
+
+        ,{
+             "id":"normalizeDx"
+            ,"tag":"maths"
+            ,"description":"normalizes dx-part of \u003cdx,dy\u003e vector"
+        }
+
+        ,{
+             "id":"normalizeDy"
+            ,"tag":"maths"
+            ,"description":"normalizes dy-part of \u003cdx,dy\u003e vector"
+        }
+
+        ,{
+             "id":"split"
+            ,"tag":"strings"
+            ,"description":""
+        }
+
+        ,{
+             "id":"map"
+            ,"tag":"lists"
+            ,"description":""
+        }
+
+        ,{
+             "id":"strToInt"
+            ,"tag":"strings"
+            ,"description":""
+        }
+
+        ,{
+             "id":"length"
+            ,"tag":"lists"
+            ,"description":""
+        }
+
+        ,{
+             "id":"filter"
+            ,"tag":"lists"
+            ,"description":""
+        }
+
+        ,{
+             "id":"ipValid"
+            ,"tag":"ips"
+            ,"description":""
         }
 
 ]}

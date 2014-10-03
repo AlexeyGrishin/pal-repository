@@ -19,4 +19,6 @@ public class Maths {
     public static double sqrt(double num) {
         return java.lang.Math.sqrt(num);
     }
+
+    //::addbefore
 }

@@ -1,8 +1,10 @@
-//::module strings
+
 (function(exports, imports) {
+    //::imports
     var checks = imports.Checks;
-    //@@tag strings
-    exports.Strings = {
+
+    //::module strings
+    var strings = exports.Strings = {
         //::function truncate
         //@@depends isDefined, isPositive
         truncate: function(str, maxLength, trailing) {
@@ -19,12 +21,13 @@
             return str.length > maxLength ? (str.substring(0, maxLength - trailing.length) + trailing) : str;
         },
 
-        //::function normalizeSpaces
-        //@@depends isDefined
+        /**::function normalizeSpaces
+         * @@depends isDefined
+         **/
         normalizeSpaces: function(str) {
             checks.isDefined(str, "str");
             return str.replaceAll(/\s+/, "");
         },
         //::addbefore
         stub: null
-}})(window)
+}})(window);
