@@ -90,4 +90,10 @@
             ,"description":""
         }
 
+        ,{
+             "id":"length"
+            ,"tag":"lists"
+            ,"description":"returns length of the list"
+        }
+
 ]}
