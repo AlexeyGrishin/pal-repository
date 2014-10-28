@@ -1,6 +1,7 @@
 
 package pal;
 //::imports
+import java.util.*;
 
 //::module lists
 public class Lists {

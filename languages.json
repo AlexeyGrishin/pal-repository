@@ -16,6 +16,7 @@
                 "class": "
                     |package ${java.package};
                     |//::imports
+                    |import java.util.*;
                     |
                     |//::module ${tag}
                     |public class ${class} {
