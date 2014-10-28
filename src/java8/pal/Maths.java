@@ -26,5 +26,11 @@ public class Maths {
         return java.lang.Math.PI;
     }
 
+    //::function circleArea
+    //@@depends pi
+    public static double circleArea(double radius) {
+        return radius*radius*pi();
+    }
+
     //::addbefore
 }
