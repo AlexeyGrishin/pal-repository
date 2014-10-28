@@ -20,5 +20,11 @@ public class Maths {
         return java.lang.Math.sqrt(num);
     }
 
+    //::function pi
+    //@@native java.lang.Math.PI
+    public static double pi() {
+        return java.lang.Math.PI;
+    }
+
     //::addbefore
 }
