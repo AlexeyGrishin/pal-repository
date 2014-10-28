@@ -96,4 +96,10 @@
             ,"description":"returns length of the list"
         }
 
+        ,{
+             "id":"counter"
+            ,"tag":"lists"
+            ,"description":""
+        }
+
 ]}
