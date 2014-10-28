@@ -10,6 +10,13 @@ public class Lists {
         return items.size();
     }
 
+    //::function counter
+    //@@depends length
+    public static String counter(List<?> items, String prefix, String empty) {
+        if (Lists.length(items) == 0) return empty;
+        return prefix + Lists.length(items);
+    }
+
     //::addbefore
 }
                 
