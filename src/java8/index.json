@@ -78,4 +78,10 @@
             ,"description":"capitalize!!!"
         }
 
+        ,{
+             "id":"pi"
+            ,"tag":"maths"
+            ,"description":""
+        }
+
 ]}
