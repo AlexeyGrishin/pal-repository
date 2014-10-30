@@ -8,12 +8,13 @@ module Maths
  extend Checks
   ### ::function hypot
   ### ololo
-  ### @depends isDefined,sqrt
+  ### @@depends isDefined,sqrt
   def hypot(dx, dy)
     is_defined(dx, "dx")
     is_defined(dy, "dy")
     sqrt(dx*dx + dy*dy)
   end
+
 
   #::function sqrt
   #@@native Math.sqrt(_)
